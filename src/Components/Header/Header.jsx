@@ -25,7 +25,9 @@ const Header = () => {
     <div
       className={`${
         bgColor ? " bg-black/90 " : "bg-black/20 "
-      } fixed  flex text-white justify-between md:justify-between w-full h-[100px] items-center z-20 px-3 `}
+      } fixed  flex text-white justify-between md:justify-between w-full h-[100px] items-center z-20 ${
+        mobileNav ? "px-0" : "px-3"
+      } `}
     >
       {/* Header-logo */}
       <div>
@@ -74,7 +76,7 @@ const Header = () => {
       {/* Mobile Navlinks */}
       {mobileNav && (
         <ul
-          className={`md:hidden flex flex-col justify-center items-center gap-7 font-medium text-lg absolute top-0 text-white bg-black w-full h-screen `}
+          className={`md:hidden flex flex-col justify-center items-center gap-7 font-medium text-lg absolute top-0 left-0 text-white bg-black w-full h-screen `}
         >
           <li>Home</li>
           <li>Shop</li>
