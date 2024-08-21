@@ -40,13 +40,13 @@ const Header = () => {
           <Link to={"/shop"}>Shop</Link>
         </li>
         <li>
-          <Link>Accessories</Link>
+          <Link to={"/accessories"}>Accessories</Link>
         </li>
         <li>
-          <Link>Pages</Link>
+          <Link to={"/pages"}>Pages</Link>
         </li>
         <li>
-          <Link>Blog</Link>
+          <Link to={"/blog"}>Blog</Link>
         </li>
       </ul>
       {/* account and cart items */}

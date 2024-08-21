@@ -8,6 +8,9 @@ import CartPage from "./Components/CartPage.jsx/CartPage";
 import "react-toastify/dist/ReactToastify.css";
 import ScrollToTop from "./Components/ScrollToTop";
 import Footer from "./Components/Footer/Footer";
+import Accessories from "./Components/Accessories/Accessories";
+import Pages from "./Components/Pages/Pages";
+import Blog from "./Components/Blog/Blog";
 const AppLayout = () => {
   return (
     <>
@@ -35,6 +38,18 @@ const appRouter = createBrowserRouter([
       {
         path: "/cart",
         element: <CartPage />,
+      },
+      {
+        path: "/accessories",
+        element: <Accessories />,
+      },
+      {
+        path: "/pages",
+        element: <Pages />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
     ],
   },
