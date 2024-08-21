@@ -78,11 +78,21 @@ const Header = () => {
         <ul
           className={`md:hidden flex flex-col justify-center items-center gap-7 font-medium text-lg absolute top-0 left-0 text-white bg-black w-full h-screen `}
         >
-          <li>Home</li>
-          <li>Shop</li>
-          <li>Accessories</li>
-          <li>Pages</li>
-          <li>Blog</li>
+          <li>
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link to={"/shop"}>Shop</Link>
+          </li>
+          <li>
+            <Link to={"/accessories"}>Accessories</Link>
+          </li>
+          <li>
+            <Link to={"/pages"}>Pages</Link>
+          </li>
+          <li>
+            <Link to={"/blog"}>Blog</Link>
+          </li>
         </ul>
       )}
     </div>
